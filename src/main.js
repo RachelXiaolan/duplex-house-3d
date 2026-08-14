@@ -9,6 +9,7 @@ import { C } from './data/building.js';
 import { buildHouse } from './scene/house.js';
 import { buildFurniture } from './scene/furniture.js';
 import { buildOpenings } from './scene/openings.js';
+import { buildFinishes } from './scene/finishes.js';
 import { setLampEmissive } from './scene/materials.js';
 import { LAMPS } from './data/furniture.js';
 import { Player } from './player.js';
@@ -51,6 +52,9 @@ function start() {
   loader.set(0.35, '生成门窗…');
   const op = buildOpenings();
   g1.add(op[1]); g2.add(op[2]);
+  loader.set(0.40, '生成硬装（踢脚线/墙地砖/窗帘/灯带）…');
+  const fin = buildFinishes();
+  g1.add(fin[1]); g2.add(fin[2]);
   loader.set(0.45, '生成家具…');
   const furn = buildFurniture();
   g1.add(furn[1]); g2.add(furn[2]);

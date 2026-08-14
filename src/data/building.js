@@ -153,7 +153,7 @@ const W = (id, floor, side, pos, w, h, sill) => ({ id, floor, side, pos, w, h, s
 export const WINDOWS = [
   // 一层
   W('w_living_n',  1, 'N',  6.00, 1.80, 2.20, 0.20),
-  W('w_living_w',  1, 'W',  3.20, 1.80, 1.50, 0.90),
+  W('w_living_w',  1, 'W',  5.70, 1.80, 1.50, 0.90),   // 南移：原位与电视背景墙冲突
   W('w_kitchen_e', 1, 'E',  3.30, 1.60, 1.40, 1.00),
   W('w_kitchen_n', 1, 'N', 12.90, 1.60, 1.40, 1.00),
   W('w_guest_w',   1, 'W',  9.50, 1.80, 1.50, 0.90),
